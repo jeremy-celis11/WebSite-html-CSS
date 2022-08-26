@@ -239,67 +239,56 @@ nav{
     }
     
 }
- /* @media screen and (min-width: 700px) {
-    .Hamburgesa{
-        display: none;
-    }
-    
-    .Menu{
-        display: flex;
-    }
-    
-}  */
 /*Media screen*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
-    .cover{
-        background-color: yellow;
-    }
-    .container_cover .img img{
-        display: none;
-    }
-    
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
-    .cover{
-        background-color: #ff0000;      
-    }
-    .container_cover .img img{
-        width: 200px;
-    }
-    
-}/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px){
-    .cover{
-        background-color:#00ff5e;
-    }
-    .container_cover .img img{
-        width: 300px;
-    }
-    .Hamburgesa{
-        display: none;
-    }
-    
-    .Menu{
-        display: flex;
-    }
-}/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){
-    .cover{
-        background-color: #190b46;
-    }
-    .container_cover .img img{
-        width: 500px;
-    }
-}/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px){
-    .cover{
-        background-color: #ff00ae;
-    }
     .container_cover .img img{
         width: 600px;
     }
+    .container_cover .text h2{
+        font-size: 60px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    .container_cover .img img{
+        width: 500px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    .container_cover .img img{
+        width: 400px;
+    }
+    .Hamburgesa{
+        display: none;
+    }
+    
+    .Menu{
+        display: flex;
+    }
+    .container_cover .text h2{
+        font-size: 45px;
+    }
 }
 
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    .container_cover .img img{
+        width: 220px;
+    }
+    .container_cover .text h2{
+        font-size: 35px;
+    }
+    
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    .container_cover .img img{
+        display: none;
+    }
+    .container_cover .text h2{
+        font-size: 50px;
+    }
+    
+}
