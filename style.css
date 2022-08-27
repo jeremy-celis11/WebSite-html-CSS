@@ -232,7 +232,7 @@ nav{
     background-image: linear-gradient(to right top, #121212, #0e0e0e, #0a0a0a, #050505, #000000);
     padding-top: 30px;
 }
-.container_cursos h1 {
+.container_cursos h1,.Profesores h2 {
     background: #d25241;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,#92c5c8,#d25241);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #92c5c8, #d25241);   
@@ -245,7 +245,7 @@ nav{
     
 }
 
-.enunciado{
+.enunciado,.enunciadoProfe{
     color: white;
     text-align: center;
     margin: 20px;
@@ -255,7 +255,6 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 40px 0;
 }
 .container .card {
   position: relative;
@@ -373,16 +372,16 @@ nav{
 
 /*Secion del profesores*/
 .Profesores{
-    min-height: 50vh;
+    min-height: 60vh;
     background-image: linear-gradient(to right top, #000000, #16000d, #1f021b, #20072c, #130f40);
-    
+    padding-top: 20px;
 }
 .boxCardProfes{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 15px 14px;
+    margin: 0px 14px;
 }
 
 .CardProfes {
@@ -391,7 +390,7 @@ nav{
     display: flex;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0 5px 10px #033f49;
+    box-shadow: 0 5px 10px rgb(238, 236, 236);
     border-radius: 10px;
     margin: 15px 14px;
     transition: 0.1s;
@@ -399,7 +398,8 @@ nav{
 
 .CardProfes:hover {
     transform: scale(1.02);
-    box-shadow: 0 5px 20px #033f49;
+    box-shadow: 0 5px 20px white;
+    /* animation: shake 0.5s infinite; */
 }
 
 .img-card {
@@ -437,6 +437,12 @@ nav{
 .CardProfes .content .text p {
     color: rgba(0, 0, 0, 0.6);
     font-size: 15px;
+}
+
+/*Seccion del Footer*/
+.FooterPage{
+    height: 60vh;
+    background-image: linear-gradient(to left, #000000, #120c10, #19161c, #1c1e29, #1a2836);
 }
 /*Animaciones*/
 
