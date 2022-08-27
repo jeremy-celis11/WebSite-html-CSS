@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.BackGround{
+.Home{
     /* width: 100%; */
     height: 100vh;
     background-image: linear-gradient(to right bottom, #00c59c, #00a78e, #04897c, #196c67, #225050, #2f5453, #3a5757, #455b5a, #62817b, #82a89b, #a8d1ba, #d3fbd8);
@@ -226,18 +226,6 @@ nav{
     margin: 7px 15px;
     animation: ImgMove 3s  linear infinite;
 }
-
-@keyframes ImgMove {
-    0%{
-        transform: translateY(30px);
-    }
-    50%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(30px);
-    }   
-}
 /* Secion de cursos online */
 .container_cursos{
     min-height: 100vh;
@@ -267,7 +255,6 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
     margin: 40px 0;
 }
 .container .card {
@@ -330,7 +317,6 @@ nav{
  .container .card .box:hover {
   transform: translateY(-50px);
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-
 }
 
  .container .card .box:before {
@@ -350,7 +336,7 @@ nav{
 
  .container .card .box .content h2 {
   position: absolute;
-  top: -10px;
+  top: 3px;
   right: 30px;
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.1);
@@ -381,6 +367,104 @@ nav{
   background: #fff;
   color: #000;
 }
+.container .card .box .content img:hover {
+    animation: shake 0.5s infinite;
+}
+
+/*Secion del profesores*/
+.Profesores{
+    min-height: 50vh;
+    background-image: linear-gradient(to right top, #000000, #16000d, #1f021b, #20072c, #130f40);
+    
+}
+.boxCardProfes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 14px;
+}
+
+.CardProfes {
+    width: 500px;
+    height: 320px;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 10px #033f49;
+    border-radius: 10px;
+    margin: 15px 14px;
+    transition: 0.1s;
+}
+
+.CardProfes:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px #033f49;
+}
+
+.img-card {
+    width: 40%;
+    height: 100%;
+}
+.img-card1{
+    background: url("https://i.pinimg.com/564x/76/fb/c0/76fbc0e69dd078e20ec7f30deb02ca3d.jpg");
+    background-size: cover;
+}
+.img-card2{
+    background: url("https://i.pinimg.com/564x/0a/7c/14/0a7c140e64e8dc3a81db4e9aff5df12b.jpg");
+    background-size: cover;
+}
+
+
+
+.CardProfes .content {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+
+.CardProfes .content .title h3 {
+    color: #026e5e;
+}
+
+.CardProfes .content .title span {
+    color: #0089ba;
+    font-size: 12px;
+}
+
+.CardProfes .content .text p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+}
+/*Animaciones*/
+
+
+@keyframes ImgMove {
+    0%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(30px);
+    }   
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 /*Media screen*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
@@ -389,6 +473,13 @@ nav{
     }
     .container_cover .text h2{
         font-size: 50px;
+    }
+    .container .card .box .content img {
+        width: 65px;
+    }
+
+    .container .card .box .content p {
+        font-size: 14px;
     }
 
 }
