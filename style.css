@@ -441,8 +441,82 @@ nav{
 
 /*Seccion del Footer*/
 .FooterPage{
-    height: 60vh;
+    min-height: 80vh;
     background-image: linear-gradient(to left, #000000, #120c10, #19161c, #1c1e29, #1a2836);
+}
+
+.endpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 50px;
+}
+.Prueba{
+    display: flex;
+    flex-direction: row;
+}
+.FooterContenido ul li {
+    padding: 5px 10px 5px 50px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
+.FooterContenido ul li:nth-child(1){
+    background: url('https://cdn-icons-png.flaticon.com/512/8009/8009323.png') no-repeat left center;
+    background-size: 20px;
+}
+
+.FooterContenido ul li:nth-child(2){
+    background: url('https://cdn-icons-png.flaticon.com/512/2992/2992497.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(3){
+    background: url('https://cdn-icons-png.flaticon.com/512/2231/2231683.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(4){
+    background: url('https://cdn-icons-png.flaticon.com/512/55/55281.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(5){
+    background: url('https://cdn-icons-png.flaticon.com/512/4202/4202259.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(6){
+    background: url('https://cdn-icons-png.flaticon.com/512/2989/2989976.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(7){
+    background: url('https://cdn-icons-png.flaticon.com/512/64/64673.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(8){
+    background: url('https://cdn-icons-png.flaticon.com/512/2168/2168281.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(9){
+    background: url('https://cdn-icons-png.flaticon.com/512/3670/3670274.png') no-repeat left center;
+    background-size: 20px;
+}
+.FooterContenido ul li:nth-child(10){
+    background: url('https://cdn-icons-png.flaticon.com/512/3291/3291695.png') no-repeat left center;
+    background-size: 20px;
+}
+li a,.FooterInfo p a{
+    text-decoration: none;
+    color: white;
+}
+.FooterInfo p{
+    margin: 30px 0px;
+
+}
+.imglist{
+    width: 15px;
+}
+.FooterContenido{
+    margin: 10px 100px;
 }
 /*Animaciones*/
 
